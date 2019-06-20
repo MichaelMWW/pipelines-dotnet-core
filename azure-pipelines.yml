@@ -27,3 +27,8 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+- task: queryWorkItems@0
+  inputs:
+    queryId: 'bef40187-734c-4d42-a9fe-e8b4e4236351'
+    maxThreshold: '10'
+    minThreshold: '1'
